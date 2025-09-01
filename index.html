@@ -3,14 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
+  <title>Francisca's Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+  <!-- Your own CSS (optional, loads after Bootstrap so you can override) -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world! 🌍</h1>
-  <p>This is my first website.</p>
-  <button onclick="sayHello()">Click me</button>
+<!--Nav-->
+ <nav class="navbar navbar-expand-lg glass-navbar py-1">
+  <div class="container-fluid">
+    
+    <!-- Navbar Brand -->
+    <a class="navbar-brand ms-3" href="#">MyBrand</a>
 
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links + Icons -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav w-100 align-items-center">
+
+        <!-- Text Links (left side) -->
+        <li class="nav-item me-3">
+          <a class="nav-link" href="#">UI/UX Work</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="#">Case Studies</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="#">Resume</a>
+        </li>
+          <li class="nav-item me-3">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+        <!-- Spacer pushes icons to the right -->
+        <li class="nav-item ms-auto d-flex">
+          <!-- Icon Links (horizontal layout) -->
+          <a class="nav-link me-2" href="https://github.com/yourprofile" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+          <a class="nav-link me-2" href="https://linkedin.com/in/yourprofile" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a class="nav-link me-2" href="https://twitter.com/yourprofile" target="_blank">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Hero section-->
+  <div class="container text-center mt-5">
+    <h1 class="text-primary">Hello, Bootstrap! 🌐</h1>
+    <p class="lead">This is my first website with Bootstrap.</p>
+    <!-- <button class="btn btn-success" onclick="sayHello()">Click me</button> -->
+  </div>
+<!--UI/UX section-->
+<div class="container my-5 py-3 position-relative">
+  <div class="row flex-nowrap gx-4 align-items-stretch justify-content-start">
+
+    <!-- Section Title -->
+    <div class="col-12 col-md-6 col-lg-2">
+      <div class="card bg-transparent border-0 h-100 d-flex align-items-center justify-content-center w-auto">
+        <h2 class="text-white text-start ps-2 fs-3 fw-normal">UI/UX Work</h2>
+      </div>
+    </div>
+
+    <!-- Portfolio Cards -->
+    <div class="col-12 col-md-6" style="flex: 0 0 30%; max-width: 30%;">
+     <a href="project1.html" class="image-card d-block position-relative" data-bs-toggle="tooltip" data-bs-placement="top" title="Project 1">
+        <img src="Assets/Italy map cover.png" class="img-fluid rounded" alt="Project 1">
+      </a>
+    </div>
+
+    <div class="col-12 col-md-6" style="flex: 0 0 30%; max-width: 30%;">
+      <a href="project2.html" class="d-block position-relative image-card" data-bs-toggle="tooltip" title="Project 2">
+        <img src="Assets/Italy map cover.png" class="img-fluid rounded" alt="Project 2">
+      </a>
+    </div>
+
+    <div class="col-12 col-md-6" style="flex: 0 0 30%; max-width: 30%;">
+      <a href="project3.html" class="d-block position-relative image-card" data-bs-toggle="tooltip" title="Project 3">
+        <img src="Assets/Italy map cover.png" class="img-fluid rounded" alt="Project 3">
+      </a>
+    </div>
+
+  </div>
+  <!-- Show More Link Row -->
+  <div class="d-flex justify-content-end mt-3">
+    <a href="work.html" class="show-more-link text-decoration-none text-white fw-bold">
+      Show More →
+    </a>
+  </div>
+</div>
+
+<!-- Case Studies Section -->
+<div class="container my-5 position-relative">
+  <div class="row flex-nowrap gx-4 align-items-stretch justify-content-start">
+
+    <!-- Section Title -->
+    <div class="col-12 col-md-6 col-lg-2">
+      <div class="card bg-transparent border-0 h-100 d-flex align-items-center justify-content-center w-auto">
+        <h2 class="text-white text-start ps-2 fs-3 fw-normal">Case Studies</h2>
+      </div>
+    </div>
+
+    <!-- Portfolio Cards -->
+    <div class="col-12 col-md-6" style="flex: 0 0 30%; max-width: 30%;">
+     <a href="project1.html" class="image-card d-block position-relative" data-bs-toggle="tooltip" data-bs-placement="top" title="Project 1">
+        <img src="Assets/Italy map cover.png" class="img-fluid rounded" alt="Project 1">
+      </a>
+    </div>
+
+    <div class="col-12 col-md-6" style="flex: 0 0 30%; max-width: 30%;">
+      <a href="project2.html" class="d-block position-relative image-card" data-bs-toggle="tooltip" title="Project 2">
+        <img src="Assets/Italy map cover.png" class="img-fluid rounded" alt="Project 2">
+      </a>
+    </div>
+
+    <div class="col-12 col-md-6" style="flex: 0 0 30%; max-width: 30%;">
+      <a href="project3.html" class="d-block position-relative image-card" data-bs-toggle="tooltip" title="Project 3">
+        <img src="Assets/Italy map cover.png" class="img-fluid rounded" alt="Project 3">
+      </a>
+    </div>
+
+  </div>
+  <!-- Show More Link Row -->
+  <div class="d-flex justify-content-end mt-3">
+    <a href="work.html" class="show-more-link text-decoration-none text-white fw-bold">
+      Show More →
+    </a>
+  </div>
+</div>
+  <!-- Bootstrap JS (with Popper for some components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+
+  <!-- Your own JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
