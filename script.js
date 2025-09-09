@@ -1,3 +1,3 @@
-function sayHello() {
-  alert("Hello from JavaScript! 👋");
-}
+const lightbox = GLightbox({
+  selector: '.glightbox'
+});
