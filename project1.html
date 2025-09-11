@@ -22,6 +22,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<!--playfair display font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
 </head>
 <!--Nav-->
@@ -45,16 +49,16 @@
 
         <!-- Text Links (left side) -->
         <li class="nav-item me-3">
-          <a class="nav-link" href="ui-ux.html">UI/UX Work</a>
+          <a class="nav-link" href="index.html">UI/UX Work</a>
         </li>
         <li class="nav-item me-3">
           <a class="nav-link" href="case-studies.html">Case Studies</a>
         </li>
         <li class="nav-item me-3">
-          <a class="nav-link" href="#">Resume</a>
+          <a class="nav-link" href="Resume.html">Resume</a>
         </li>
           <li class="nav-item me-3">
-          <a class="nav-link" href="#">Bio & Contact</a>
+          <a class="nav-link" href="bio-contact.html">Bio & Contact</a>
         </li>
 
         <!-- Spacer pushes icons to the right -->
@@ -75,6 +79,10 @@
     </div>
   </div>
 </nav>
+<!-- Banner Section -->
+<div class="banner">
+  <img src="Assets/Map/Veneto.png" alt="Banner Image" class="banner-img">
+</div>
 
 <!-- Back to Main Page Button -->
 <div class="container text-start mt-3">
@@ -84,7 +92,7 @@
 </div>
 <!--Small hero-->
   <div class="container text-start my-4 mt-5">
-    <h1 class="modak-regular">Protoyped Vector Map</h1>
+    <h1 class="playfair-display-hello">protoyped vector map</h1>
     <p class="lead">As part of my work for DonnaVino, I built an interactive, prototyped vector map within a sleek, simple UI search flow that filtered the company's products by region. Come take a look:</p>
   </div>
 
@@ -104,13 +112,13 @@
         <br>
     </div>    
     <div class="col-md-6">
-      <img src="Assets/Frame 1984078493.png" alt="Example Image" class="img-fluid rounded">
+      <img src="Assets/Map/Italy map cover.png" alt="Example Image" class="img-fluid rounded">
     </div>
   </div>
   <hr>
   <div class="row align-items-center">
     <div class="col-md-6 text-start">
-          <p class="h3-style">So, this is what I did:</p>
+          <p class="h3">So, this is what I did:</p>
         <br>
         <ul>
             <li>first step was to outline and draw the shape using <b>Adobe Illustrator</b>. This step was important as I wanted <u>each individual region of Italy to be its own component</u>, that way, I would be able to add the variants needed for a prototype later on.</li>
@@ -124,33 +132,28 @@
         
         <div class="carousel-inner">
      <div class="carousel-item active">
-        <a href="Assets/Frame 1984078494.png" class="glightbox">
-        <img src="Assets/Frame 1984078494.png" class="d-block w-100 rounded" alt="Project Image 1">
+        <a href="Assets/Map/dark.png" class="glightbox">
+        <img src="Assets/Map/dark.png" class="d-block w-100 rounded" alt="Project Image 1">
         </a>
      </div>
      <div class="carousel-item">
-        <a href="Assets/dark.png" class="glightbox">
-        <img src="Assets/dark.png" class="d-block w-100 rounded" alt="Project Image 2">
+        <a href="Assets/Map/Map w layers.png" class="glightbox">
+        <img src="Assets/Map/Map w layers.png" class="d-block w-100 rounded" alt="Project Image 2">
         </a>
     </div>
       <div class="carousel-item">
-        <a href="Assets/Map w layers.png" class="glightbox">
-        <img src="Assets/Map w layers.png" class="d-block w-100 rounded" alt="Project Image 2">
-        </a>
-    </div>
-      <div class="carousel-item">
-        <a href="Assets/variables.png" class="glightbox">
-        <img src="Assets/variables.png" class="d-block w-100 rounded" alt="Project Image 2">
+        <a href="Assets/Map/variables.png" class="glightbox">
+        <img src="Assets/Map/variables.png" class="d-block w-100 rounded" alt="Project Image 2">
         </a>
     </div>
     <div class="carousel-item">
-        <a href="Assets/variables prototyped.png" class="glightbox">
-        <img src="Assets/variables prototyped.png" class="d-block w-100 rounded" alt="Project Image 2">
+        <a href="Assets/Map/variables prototyped.png" class="glightbox">
+        <img src="Assets/Map/variables prototyped.png" class="d-block w-100 rounded" alt="Project Image 2">
         </a>
     </div>
     <div class="carousel-item">
-        <a href="Assets/tooltip.png" class="glightbox">
-        <img src="Assets/tooltip.png" class="d-block w-100 rounded" alt="Project Image 2">
+        <a href="Assets/Map/tooltip.png" class="glightbox">
+        <img src="Assets/Map/tooltip.png" class="d-block w-100 rounded" alt="Project Image 2">
         </a>
     </div>
     </div>
@@ -168,6 +171,27 @@
         
       </div>
     </div>
+<!-- Image Gallery Section -->
+<div class="container my-5">
+  <h2 class="h3 text-start mb-4">And it turned out like this:</h2>
+  
+  <div class="row g-4">
+    <!-- Image 1 -->
+    <div class="col-12 col-md-6 col-lg-6">
+      <a href="Assets/Map/Frame 1984078493.png" class="glightbox" data-gallery="project-gallery">
+        <img src="Assets/Map/Frame 1984078493.png" class="img-fluid rounded shadow gallery-img" alt="Project Image 1">
+      </a>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="col-12 col-md-6 col-lg-6">
+      <a href="Assets/Map/Frame 1984078494.png" class="glightbox" data-gallery="project-gallery">
+        <img src="Assets/Map/Frame 1984078494.png" class="img-fluid rounded shadow gallery-img" alt="Project Image 2">
+      </a>
+    </div>
+  </div>
+</div>
+<p>You can click the images to view them in fullscreen, and you can have a look at the Figma playground <a href="link">here!</a></p>
 
   </div>
 </div>
